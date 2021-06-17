@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candle</title>
+
+    <style>
+      .first {
+        display: flex;
+        justify-content: center;
+      }
+      .candle {
+        display: block;
+        justify-content: center;
+        position: relative;
+      }
+      .base-candle {
+        width: 100px;
+        height: 200px;
+        background-color: rgb(71, 33, 33);
+        position: relative;
+        top: 130px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      .candle-fire {
+        position: absolute;
+        top: 18px;
+        left: 35%;
+        width: 30px;
+        height: 110px;
+        background-color: #fcea13;
+        /* border-radius: 50%; */
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 30%;
+        border-bottom-left-radius: 30%;
+      }
+      .second {
+        font-size: 5em;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        justify-content: center;
+        align-items: center;
+      }
+      .first-g {
+        color: #4285f4;
+      }
+      .first-o {
+        color: #ea4335;
+      }
+      .second-o {
+        color: #fbbc05;
+      }
+      .second-g {
+        color: #4285f4;
+      }
+      .l {
+        color: #34a853;
+      }
+      .e {
+        color: #ea4335;
+      }
+      .second-inner {
+        margin-top: -130px;
+      }
+      input {
+        padding: 10px;
+        width: 30vw;
+        border-radius: 10px;
+        border: 1px solid grey;
+        outline: none;
+      }
+
+      input::placeholder {
+        padding-left: 13px;
+      }
+      .lorem {
+        float: left;
+        width: 0.7em;
+        font-size: 60px;
+        /* font-family: algerian, courier; */
+        /* line-height: 80%; */
+      }
+
+      img {
+        height: 200px;
+        width: 200px;
+        float: right;
+      }
+      .text {
+        /* background: url("./src/img/wallpaper.jpg"); */
+        /* color: white; */
+        /* background-image: url("./src/img/wallpaper1.jpg"); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text">
+      <p>
+        <img src="./src/img/wallpaper.jpg" alt="" />
+        <span class="lorem">L</span> orem ipsum dolor sit amet consectetur
+        adipisicing elit. Odio asperiores dolorem placeat ducimus, quaerat ex
+        enim earum provident amet alias ullam qui id illo voluptate fuga debitis
+        quas distinctio ut animi? Numquam sint maiores rem iusto aut eos aliquam
+        aliquid saepe laborum, quo quae culpa ipsam eaque totam facilis
+        cupiditate? quas distinctio ut animi? Numquam sint maiores rem iusto aut
+        eos aliquam aliquid saepe laborum, quo quae culpa ipsam eaque totam
+        facilis cupiditate? quas distinctio ut animi? Numquam sint maiores rem
+        iusto aut eos aliquam aliquid saepe laborum, quo quae culpa ipsam eaque
+        totam facilis cupiditate? quas distinctio ut animi? Numquam sint maiores
+        totam facilis cupiditate? quas distinctio ut animi? Numquam sint maiores
+        totam facilis cupiditate? quas distinctio ut animi? Numquam sint maiores
+        rem iusto aut eos aliquam aliquid saepe laborum, quo quae culpa ipsam
+        eaque totam facilis cupiditate? totam facilis cupiditate? quas
+        distinctio ut animi? Numquam sint maiores totam facilis cupiditate? quas
+        distinctio ut animi? Numquam sint maiores totam facilis cupiditate? quas
+        distinctio ut animi? Numquam sint maiores rem iusto aut eos aliquam
+        aliquid saepe laborum, quo quae culpa ipsam eaque totam facilis
+        cupiditate? totam facilis cupiditate? quas distinctio ut animi? Numquam
+        sint maiores totam facilis cupiditate? quas distinctio ut animi? Numquam
+        sint maiores totam facilis cupiditate? quas distinctio ut animi? Numquam
+        sint maiores rem iusto aut eos aliquam aliquid saepe laborum, quo quae
+        culpa ipsam eaque totam facilis cupiditate? totam facilis cupiditate?
+        quas distinctio ut animi? Numquam sint maiores totam facilis cupiditate?
+        quas distinctio ut animi? Numquam sint maiores totam facilis cupiditate?
+        quas distinctio ut animi? Numquam sint maiores rem iusto aut eos aliquam
+        aliquid saepe laborum, quo quae culpa ipsam eaque totam facilis
+        cupiditate? quas distinctio ut animi? Numquam sint maiores totam facilis
+        cupiditate? quas distinctio ut animi? Numquam sint maiores totam facilis
+        cupiditate? quas distinctio ut animi? Numquam sint maiores rem iusto aut
+        eos aliquam aliquid saepe laborum, quo quae culpa ipsam eaque totam
+        facilis cupiditate? quas distinctio ut animi? Numquam sint maiores totam
+        facilis cupiditate? quas distinctio ut animi? Numquam sint maiores totam
+        facilis cupiditate? quas distinctio ut animi? Numquam sint maiores rem
+        iusto aut eos aliquam aliquid saepe laborum, quo quae culpa ipsam eaque
+        totam facilis cupiditate?
+      </p>
+    </div>
+
+    <div class="first">
+      <div class="candle">
+        <div class="candle-fire"></div>
+        <div class="base-candle"></div>
+      </div>
+    </div>
+    <div class="second">
+      <div class="first-inner">
+        <span class="first-g">G</span>
+        <span class="first-o">O</span>
+        <span class="second-o">O</span>
+        <span class="second-g">G</span>
+        <span class="l">L</span>
+        <span class="e">E</span>
+      </div>
+      <div class="second-inner">
+        <form
+          action="
+      "
+        >
+          <br />
+          <input type="text" placeholder="Search here" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

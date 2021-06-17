@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="media-div">
+      <div class="audio">
+        <audio src="./src/audio/Surah Yaseen.mp3" controls></audio>
+        <audio src="./src/audio/Surah Yaseen.mp3" controls></audio>
+      </div>
+      <div class="video">
+        <video
+          class="video-src"
+          src="./src/videos/tilawat.mp4"
+          controls
+        ></video>
+      </div>
+    </div>
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ullam
+        reprehenderit iste ea laboriosam quam inventore dolores molestiae
+        aliquid, odio consectetur suscipit non AAAAAAAAAAAAAAA! <br />
+        <br />
+        Esse alias enim nisi quis, saepe distinctio adipisci modi quibusdam
+        delectus ducimus sed soluta unde repudiandae similique iure incidunt
+        mollitia architecto tempora minus vero quo laborum officiis nostrum!
+        Mollitia optio perspiciatis culpa, laboriosam natus, excepturi
+        reprehenderit voluptas, accusamus nulla fugiat quo earum aut temporibus.
+        Praesentium, aut earum? Suscipit, nam tempore! Nam, facilis sapiente.
+        Nihil odio perspiciatis ut dicta sit officia reprehenderit illo repellat
+        laboriosam amet numquam quibusdam quaerat officiis explicabo dolorem,
+        eos temporibus tempora deserunt voluptatibus.
+      </p>
+    </div>
+
+    <script>
+      function onlyPlayOneIn(container) {
+        container.addEventListener(
+          "play",
+          function (event) {
+            audio_elements = container.getElementsByTagName("audio");
+            for (i = 0; i < audio_elements.length; i++) {
+              audio_element = audio_elements[i];
+              if (audio_element !== event.target) {
+                audio_element.pause();
+              }
+            }
+          },
+          true
+        );
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        onlyPlayOneIn(document.body);
+      });
+
+      function onlyPlayOneVideo(container) {
+        container.addEventListener(
+          "play",
+          function (event) {
+            video_elements = container.getElementsByTagName("video");
+            for (i = 0; i < video_elements.length; i++) {
+              video_element = video_elements[i];
+              if (video_element !== event.target) {
+                video_element.pause();
+              }
+            }
+          },
+          true
+        );
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        onlyPlayOneVideo(document.body);
+      });
+    </script>
+  </body>
+</html>

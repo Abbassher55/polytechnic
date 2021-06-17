@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      .main {
+        background-color: aqua;
+        font-size: 40px;
+        color: rgb(75, 10, 10);
+        padding: 20px 40px;
+      }
+      .inner {
+        background-color: aqua;
+        font-size: 40px;
+        color: rgb(75, 10, 10);
+        padding: 20px 40px;
+        border: 10px solid black;
+      }
+      /*  Remian black until 900px */
+      @media screen and (min-width: 900px) {
+        .main {
+          background-color: rgb(39, 39, 39);
+          font-size: 20px;
+        }
+      }
+
+      /* Will change bg into black when reach to 900px */
+
+      @media screen and (max-width: 900px) {
+        .inner {
+          background-color: rgb(39, 39, 39);
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aperiam
+      dolore fugiat similique recusandae illo consequatur obcaecati asperiores
+      velit exercitationem! Rerum reiciendis sapiente consequatur deleniti
+      necessitatibus atque. Necessitatibus, cupiditate. Quo, explicabo fuga
+      eaque sit minus nulla consequatur iure vitae ea provident aperiam
+      similique expedita eum, dicta veniam quos cum adipisci?
+    </div>
+    <div class="inner">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aperiam
+      dolore fugiat similique recusandae illo consequatur obcaecati asperiores
+      velit exercitationem! Rerum reiciendis sapiente consequatur deleniti
+      necessitatibus atque. Necessitatibus, cupiditate. Quo, explicabo fuga
+      eaque sit minus nulla consequatur iure vitae ea provident aperiam
+      similique expedita eum, dicta veniam quos cum adipisci?
+    </div>
+  </body>
+</html>

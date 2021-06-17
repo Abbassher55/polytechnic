@@ -1,0 +1,11 @@
+.main {
+  position: relative;
+  border: 1px solid black;
+  height: 450px;
+
+  .inner-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+}

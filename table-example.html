@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table of HTML</title>
+
+    <style>
+      .parent-div {
+        display: flex;
+        justify-content: center;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        border-color: red;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent-div">
+      <table>
+        <tr>
+          <th rowspan="3">Subjects</th>
+          <th rowspan="3">Marks</th>
+          <th colspan="6">Marks obtain</th>
+        </tr>
+        <tr>
+          <th colspan="2">Part-1</th>
+          <th colspan="2">Part-2</th>
+          <th rowspan="2">Total</th>
+          <th rowspan="2">In words</th>
+        </tr>
+
+        <tr>
+          <td>Theory</td>
+          <td>Practical</td>
+          <td>Therory</td>
+          <td>Practical</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

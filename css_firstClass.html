@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <title>CSS First Class</title>
+
+    <style>
+      :root {
+        --red-color: red;
+      }
+
+      a {
+        color: var(--red-color);
+        text-decoration: none;
+        background-color: blue;
+        font-size: 20px;
+        padding: 20px;
+      }
+
+      a:hover {
+        color: red;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="inner-div">
+        <h3 class="head">Heading</h3>
+        <br />
+        <img
+          src="./src/img/wallpaper.jpg"
+          width="150px"
+          height="150px"
+          alt=""
+        />
+      </div>
+    </div>
+    <details>
+      <summary>Heading</summary>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eum?
+        Culpa recusandae, qui, quo doloribus magnam, aspernatur quis nemo eos
+        atque ea quas natus enim cumque ab fuga excepturi dolorum.
+      </p>
+    </details>
+
+    <form action="">
+      <input type="checkbox" />
+
+      <label for="country">Choose a Country:</label>
+      <select name="cars" id="cars">
+        <option value="pak">Pakistan</option>
+        <option value="uae">UAE</option>
+        <option value="ksa">Saudi</option>
+        <option value="oman">Oman</option>
+      </select>
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <a href="css_firstClass.html" class="myLink">Abbas</a>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <link rel="icon" href="./src/img/volume.png" />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .main {
+        display: flex;
+        justify-content: space-between;
+        background-color: #a06e55;
+      }
+      .menu-list {
+        display: flex;
+        list-style: none;
+      }
+      .list-items {
+        padding: 15px 20px;
+        color: antiquewhite;
+      }
+      .logo > img {
+        width: 30px;
+        height: 30px;
+        padding: 10px 20px;
+      }
+
+      @media (orientation: portrait) {
+        p {
+          color: red;
+          font-size: 200px;
+        }
+      }
+      /* @media screen and (max-width: 768px) {
+        p {
+          color: red;
+          font-size: 40px;
+        }
+        .menu {
+          display: none;
+        }
+        .main {
+          justify-content: center;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="logo">
+        <img src="./src/img/volume.png" alt="" />
+      </div>
+      <div class="menu">
+        <ul class="menu-list">
+          <li class="list-items">Home</li>
+          <li class="list-items">About us</li>
+          <li class="list-items">Services</li>
+        </ul>
+      </div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+      doloremque molestias unde officiis quis pariatur amet magni nesciunt est
+      aliquid! Aperiam minus, iure reprehenderit corporis perspiciatis eligendi?
+      Non nesciunt quas voluptate ullam. Officia alias sed vitae assumenda
+      mollitia! Cupiditate aliquam similique, pariatur incidunt blanditiis est
+      illo itaque tempora nesciunt aperiam.
+    </p>
+  </body>
+</html>

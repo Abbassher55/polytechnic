@@ -1,0 +1,30 @@
+.main{
+    position: relative;
+    border: 1px solid black;
+    height: 450px;
+    /* display: grid;
+    place-items: center; */
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+
+/* 
+.inner-div{
+position: absolute;
+top:100px;
+left: 45vw;
+} */
+.head{
+    text-align: center;
+    color: #fff;
+    background-color:#1b00ff75;
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: #1b00ff75;
+}
+
